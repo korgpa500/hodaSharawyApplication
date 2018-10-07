@@ -1,0 +1,373 @@
+html, body {
+    background-color: #ffffe5;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #3b0202;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 0px;
+}
+
+.py-4 {
+    margin-top: 40px;
+}
+
+.carousel-caption{
+    text-shadow: -1px -1px 1px #000000,
+    -2px -2px 1px #000000,
+    -3px -3px 1px #000000,
+    -4px -4px 1px #000000,
+    -5px -5px 1px #000000,
+    -6px -6px 1px #000000,
+    -0px -250px 5px #ffffff;
+}
+/** old style **/
+@font-face{
+    font-family:"youssryText";
+    src:url(../font/BSnake.ttf);
+}
+@font-face{
+    font-family:"youssryText2";
+    src:url(../font/PR.ttf);
+}
+.textTitleY{
+    font-family: "youssryText2";
+    font-size: 50px;
+    color: rgba(131, 0, 11, 1);
+    font-weight: bold;
+    text-shadow: #aaaaaa 2px 2px 1px;
+}
+.textWarning{
+    font-family: "Rockwell";
+    font-size: 16px;
+    color: #224466;
+    font-weight: bold;
+    text-shadow: #ffffff 1px 1px 1px;
+}
+.container{
+    padding:60px 20px;
+}
+#googleMap {
+    /*width: 100%; /* Span the entire width of the screen */
+    height: 600px; /* Set the height to 400 pixels */
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #000000;
+}
+.btnStage{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 0px 50px 0px 50px;
+    background-color: #f73434;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8aaaa), to(#f73434));
+    background-image: -webkit-linear-gradient(top, #f8aaaa, #f73434);
+    background-image: -moz-linear-gradient(top, #f8aaaa, #f73434);
+    background-image: -ms-linear-gradient(top, #f8aaaa, #f73434);
+    background-image: -o-linear-gradient(top, #f8aaaa, #f73434);
+    background-image: linear-gradient(to bottom, #f8aaaa, #f73434);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f8aaaa, endColorstr=#f73434);
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 2px 2px #156785, 1px 2px 2px #999999;
+    color:#ffffff;
+    font-size:17px;
+    text-shadow: #220000 -1px 0px 2px;
+    font-weight: bold;
+}
+.btnStage:hover{
+    background-color: #f8aaaa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8aaaa), to(#a30e0e));
+    background-image: -webkit-linear-gradient(top, #f8aaaa, #a30e0e);
+    background-image: -moz-linear-gradient(top, #f8aaaa, #a30e0e);
+    background-image: -ms-linear-gradient(top, #f8aaaa, #a30e0e);
+    background-image: -o-linear-gradient(top, #f8aaaa, #a30e0e);
+    background-image: linear-gradient(to bottom, #f8aaaa, #a30e0e);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#9bf1ff, endColorstr=#a30e0e);
+    box-shadow: 0px 1px 0px #2ab7ec, inset 0px 2px 2px 2px #156785, 1px 2px 2px #999999;
+    animation: shake 1.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+}
+.textareaY{
+    border-radius: 8px;
+    box-shadow: #000000 1px 1px 1px inset;
+    resize: none;
+    padding: 5px;
+}
+
+input[type='text']#youssry, select#youssry, input[type='file']#youssry {
+    border-radius: 8px;
+    box-shadow: #000000 1px 1px 1px inset;
+    padding: 5px;
+}
+.btnYoussry{
+    box-shadow: 2px 2px 5px #cccccc ,1px 1px 1px 1px #880000;
+    padding: 8px 30px 8px 25px;
+}
+
+
+/* carsoul fade */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 3s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* end carsoul fade */
+
+
+/* my navbar style */
+.myNavBar{
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: #000000 1px 1px 1px;
+    background-color: rgba(131, 0, 11, 0.0);
+}
+.myColorBg{
+    background-color: rgba(131, 0, 11, 0.7);
+}
+.myColorText{
+    color: rgb(131,0,11);
+}
+.dropdown-menu{
+    margin-top: 7px;
+}
+.dropdown-menu a{
+    color: white;
+}
+.dropdown-menu a:hover{
+    color: black;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+#navbarDropdown ,#itemsLink{
+    color: #eeeeee;
+}
+#navbarDropdown:focus ,#itemsLink:focus{
+    color: #ffffff;
+}
+#navbarDropdown:hover ,#itemsLink:hover{
+    color: #ffffff;
+}
+
+.myCarousel {
+    margin-top: -50px;
+}
+
+/* animation class for logo brand  */
+.logoAnim{
+    transition: all 1s;
+    transform: rotate(2160deg);
+}
+
+.logoOnCarsouel{
+    opacity: 0.2;
+    width:60%;
+    height: 60%;
+}
+
+#showPhotos ,#showBlog {
+    margin-top: 200px;
+}
+
+.showPhotos ,.showBlog {
+    display: block;
+    transition: all 1s;
+    transform: translate(0px, -200px);
+}
+
+/* show eye in password*/
+.field-icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}
+
+/**notifications **/
+.notificationY {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: blue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    margin-right: 5px;
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.0);
+}
+
+/**table without boredr**/
+.borderLess td {
+    border: none;
+}
+
+/** loading wait and scroll**/
+.imageLogo {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    background-position: center;
+}
+
+/**card style**/
+.cardY {
+    border-radius: 0px 50px;
+    color: white;
+    background-color: rgba(131, 0, 11, 0.7);
+    box-shadow: 2px 2px 2px #cccccc;
+}
+
+/** modal **/
+
+.modal {
+    top: 10%;
+}
+
+/*for icons*/
+.youssryicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.youssryicon-calendar:before {
+    content: "\1F4C5";
+    padding-right: 5px;
+}
+
+.youssryicon-time:before {
+    content: "\23F0";
+    padding-right: 5px;
+}
+
+.youssryicon-home:before {
+    content: "\26EA";
+    padding-right: 5px;
+}
+
+.youssryicon-gallery:before {
+    content: "\1F4F7";
+    padding-right: 5px;
+}
+
+.youssryicon-setting:before {
+    content: "\2699";
+    font-size: 18px;
+    padding-right: 5px;
+    font-weight: bold;
+    text-shadow: #000000 0px 1px 0px;
+}
+
+.youssryicon-logout:before {
+    content: "\21B5";
+    font-size: 18px;
+    padding-right: 5px;
+    font-weight: bold;
+    text-shadow: #000000 0px 1px 0px;
+}
+
+.youssryicon-envelope:before {
+    content: "\2709";
+    font-weight: bold;
+    text-shadow: #000000 1px 0px 0px;
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+.youssryicon-like:before {
+    content: "\1F44C";
+    font-weight: bold;
+    text-shadow: #000000 1px 0px 0px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.youssryicon-comment:before {
+    content: "\1F4E3";
+    font-weight: bold;
+    text-shadow: #000000 1px 0px 0px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+
+/** for logo in end page **/
+#contact .row img{
+    width: 50%;
+    height: 75%;
+}
+
+.logoBackGround{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.08;
+}
